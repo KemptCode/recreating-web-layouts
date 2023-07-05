@@ -1,0 +1,35 @@
+.pageContainer {
+    min-height: 100vh;
+    background-color: aqua;
+}  
+
+/* Header */
+
+
+/* Content */
+
+.searchLogo {
+    font-weight: 700;
+    font-family: 'Product Sans';
+    margin-top: 200px;
+    text-align: center;
+}
+
+.searchLogoLetterBlue {
+    color: blue;
+}
+
+.searchLogoLetterRed {
+    color: red;
+}
+
+.searchLogoLetterYellow {
+    color: yellow;
+}
+
+.searchLogoLetterGreen {
+    color: green;
+}
+
+
+/* Footer */
