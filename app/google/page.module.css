@@ -1,35 +1,55 @@
 .pageContainer {
     min-height: 100vh;
-    background-color: aqua;
+    /* background-color: aqua; */
 }  
 
 /* Header */
 
+.profilePicture {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    color: green;
+}
 
 /* Content */
 
 .searchLogo {
-    font-weight: 700;
-    font-family: 'Product Sans';
+    font-weight: 500;
+    /* font-family: 'Product Sans'; */
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
     margin-top: 200px;
     text-align: center;
+    text-shadow: 2px 2px #d1d1d1;
 }
 
 .searchLogoLetterBlue {
-    color: blue;
+    color: rgb(65, 130, 245);
 }
 
 .searchLogoLetterRed {
-    color: red;
+    color: rgb(250, 65, 50);
 }
 
 .searchLogoLetterYellow {
-    color: yellow;
+    color: rgb(250,180,5);
 }
 
 .searchLogoLetterGreen {
-    color: green;
+    color: rgb(50, 160, 80);
 }
 
+.searchBox {
+    border: 1px #d1d1d1;
+    min-height: 44px;
+    width: 100%;
+}
 
 /* Footer */
+.footer {
+    margin-top: auto;
+}
+
+.footerLink {
+    padding: 15px;
+}

@@ -1,7 +1,8 @@
 "use client"
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, Input, InputLabel, Box } from "@mui/material";
 import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import SearchIcon from '@mui/icons-material/Search';
 import Link from "next/link";
 import styles from './page.module.css'
 
@@ -28,11 +29,11 @@ export default function SearchHome() {
                         <AppsIcon />
                     </Link>
                     <Link href={'/'}>
-                        <AccountCircleIcon />
+                        <AccountCircleIcon className={styles.profilePicture} />
                     </Link>
                 </Stack>
             </Stack>
-            <div>
+            <Box>
                 <Typography variant={'h1'} className={styles.searchLogo}>
                     <span className={styles.searchLogoLetterBlue}>S</span>
                     <span className={styles.searchLogoLetterRed}>e</span>
@@ -41,15 +42,17 @@ export default function SearchHome() {
                     <span className={styles.searchLogoLetterGreen}>c</span>
                     <span className={styles.searchLogoLetterRed}>h</span>
                 </Typography>
+            </Box>
+            <div className={styles.searchBox}>
+                <SearchIcon />
             </div>
-
-            <Stack direction={'row'} justifyContent={'space-between'} >
-                <Typography variant={'body2'}>Advertising</Typography>
-                <Typography variant={'body2'}>Business</Typography>
-                <Typography variant={'body2'}>Special mission</Typography>
-                <Typography variant={'body2'}>Privacy</Typography>
-                <Typography variant={'body2'}>Terms</Typography>
-                <Typography variant={'body2'}>Settings</Typography>
+            <Stack direction={'row'} justifyContent={'space-between'} className={styles.footer}>
+                <Typography className={styles.footerLink} variant={'body2'}>Advertising</Typography>
+                <Typography className={styles.footerLink} variant={'body2'}>Business</Typography>
+                <Typography className={styles.footerLink} variant={'body2'}>Special mission</Typography>
+                <Typography className={styles.footerLink} variant={'body2'}>Privacy</Typography>
+                <Typography className={styles.footerLink} variant={'body2'}>Terms</Typography>
+                <Typography className={styles.footerLink} variant={'body2'}>Settings</Typography>
             </Stack>
         </Stack>
     );
